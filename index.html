@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ESP">
+
+<head>
+    <title>codificador</title>
+<meta charset="UTF-8">
+<link rel="Stylesheet" href="reset.css/">
+<link rel="Stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="encabezado">
+        <h2>ENCRIPTADOR ALURA CHALLENGE ONE </h2>
+        <h1><img src="logo.png"></h1>
+        <h3> <a href="https://www.linkedin.com/in/armando-arriaga-asto-666760183"> <img src="linkedin.png" alt="mi link linkedin"></a></h3>
+
+    </header>
+    <form name="cajas">
+       
+            <textarea placeholder="ingrese texto " name="caja1" id="caja1" cols="30" rows="40"></textarea>
+            <textarea output="caja2" id="caja2" cols="30" rows="40"></textarea>
+            
+             
+       
+        
+
+    </form>
+    
+    <button class="ingresar">ingrese texto</button>
+    <button class="cifrar"; onclick="cifrar()";>cifrar</button>
+    <button class="decifrar"; onclick="iniciar()";>decifrar</button>
+    <button class="copiar" onclick="copiarPorta()">copiar</button>
+    <h4>Autor: <br> Armando Arriaga Asto</h4>
+</body>
+
+
+</html>
+<script>
+var texto=[""];
+var input=document.querySelector("input");
+var textarea2 = document.getElementById("caja2");
+var button=document.querySelector("button");
+var textoCifrado=[];
+var textoCifrado1=[];
+var textoCifrado2=[];
+var textoCifrado3=[];
+var textoCifrado4=[];
+var cod=["enter","imes","ai","ober","ufat"];
+var letra=["e","i","a","o","u"];
+var act=1;
+
+function ingresar (){
+    texto=[""];
+    texto=Array.from(caja1.value);
+     caja1.value="";
+     
+}
+function cifrar(){
+    
+   // textoCifrado=[""];  
+    if(texto==""){
+        alert("ingrese texto por favor")
+
+    }else{
+       for(var j=0;j<letra.length;j++){
+        for(var i=0;i<texto.length;i++){
+        if(texto[i]==letra[j]){
+            textoCifrado[i]=cod[j];
+
+        }else{
+            textoCifrado[i]=texto[i];
+        }
+       
+    }
+    texto=textoCifrado;
+    }
+    caja2.value=textoCifrado.join("");//salida de texto sin comas
+      
+    }
+    act=0;
+   
+       
+}
+function decifrar(texto){
+    textoCifrado=[""];
+    caja2.value=textoCifrado;
+    for(var j=0;j<cod.length;j++){
+        for(var i=0;i<texto.length;i++){
+                if(texto[i]==cod[j]){
+                    textoCifrado[i]=letra[j];
+
+                }else{
+                    textoCifrado[i]=texto[i];
+                }
+               
+            }
+            texto=textoCifrado;
+    }  
+    console.log(textoCifrado);
+    
+    caja2.value=textoCifrado.join("");
+    
+    
+    
+}
+
+
+
+function concatenar(){
+    
+    
+    for(var i=0;i<texto.length  ;i++){
+      if((texto[i]=="e")&&(texto[i+1]=="n")&&(texto[i+2]=="t")&&(texto[i+3]=="e")&&(texto[i+4]=="r")){
+        
+        textoCifrado.push("enter");
+        i=i+4;
+        
+    }  else{
+
+        textoCifrado.push(texto[i]);
+        
+    }
+    }
+    console.log(textoCifrado);   
+    for(var i=0;i<textoCifrado.length;i++){
+      if((textoCifrado[i]=="i")&&(textoCifrado[i+1]=="m")&&(textoCifrado[i+2]=="e")&&(textoCifrado[i+3]=="s")){
+        
+        textoCifrado1.push("imes");
+        i=i+3;
+        
+    }  else{
+
+        textoCifrado1.push(textoCifrado[i]);
+        
+    }
+    }
+    console.log(textoCifrado1);
+    for(var i=0;i<textoCifrado1.length;i++){
+      if((textoCifrado1[i]=="o")&&(textoCifrado1[i+1]=="b")&&(textoCifrado1[i+2]=="e")&&(textoCifrado1[i+3]=="r")){
+        
+        textoCifrado2.push("ober");
+        i=i+3;
+        
+    }  else{
+
+        textoCifrado2.push(textoCifrado1[i]);
+        
+    }
+    }
+    console.log(textoCifrado2);
+    for(var i=0;i<textoCifrado2.length;i++){
+      if((textoCifrado2[i]=="u")&&(textoCifrado2[i+1]=="f")&&(textoCifrado2[i+2]=="a")&&(textoCifrado2[i+3]=="t")){
+        
+        textoCifrado3.push("ufat");
+        i=i+3;
+        
+    }  else{
+
+        textoCifrado3.push(textoCifrado2[i]);
+        
+    }
+    }
+    console.log(textoCifrado3);
+    for(var i=0;i<textoCifrado3.length;i++){
+      if((textoCifrado3[i]=="a")&&(textoCifrado3[i+1]=="i")){
+        
+        textoCifrado4.push("ai");
+        i=i+1;
+        
+    }  else{
+
+        textoCifrado4.push(textoCifrado3[i]);
+        
+    }
+    }
+    console.log(textoCifrado4);
+    texto=[""];
+}
+function iniciar(){
+    if(act==1){
+        concatenar();
+        decifrar(textoCifrado4);
+        texto=Array.from(caja2.value);
+        
+    }
+    if(act==0){
+        decifrar(texto);
+    }
+}   
+function copiarPorta(){
+    var espacio=[];
+    espacio=Array.from(caja2.value);
+    if(espacio==""){
+    alert("no hay texto a copiar")
+
+    }else{
+        let copia=document.getElementById("caja2");
+        copia.select();
+        copia.setSelectionRange(0,99999);
+        document.execCommand("copy");
+    }
+}
+    button.onclick = ingresar;
+
+</script>
