@@ -1,0 +1,83 @@
+html{
+     background: -o-linear-gradient(top, black 10%, rgb(167, 167, 202) 75%, black);
+    background:linear-gradient(top, black 10%, rgb(167, 167, 202) 75%, black);
+    background:-webkit-linear-gradient(top, black 10%, rgb(167, 167, 202) 75%, black);
+    background:-moz-linear-gradient(top, black 10%, rgb(167, 167, 202) 75%, black);
+    background:-o-linear-gradient(top, black 10%, rgb(167, 167, 202) 75%, black);
+    background:-ms-linear-gradient(top, black 10%, rgb(167, 167, 202) 75%, black);
+}
+
+.encabezado{
+    position: relative;
+    margin-top: 3%;
+}
+#caja1{
+    
+    color: rgb(27, 27, 170);
+    resize: none;
+    background-color: rgb(255, 255, 255);
+    margin-left: 12%;
+    border: rgb(0, 0, 0) 5px dashed;
+}
+#caja2{
+    color: rgb(27, 27, 170);
+    background-color:rgb(255, 255, 255);
+    resize: none; 
+    margin-left: 41%;
+    border: rgb(0, 0, 0) 5px dashed;
+}
+h1{
+    
+    margin-left: 5%;
+}
+
+h2{
+    position: absolute;
+    margin-top: 0%;
+    font-size: 200%;
+    color:rgb(207, 228, 207); 
+    margin-left: 28%;
+    
+   
+
+}
+h3{
+    margin-top: 36%;
+    margin-left: 85%;
+    position: absolute;
+
+}
+body{  
+    
+   
+
+
+}
+.ingresar{
+    margin-left: 14.5%;
+    font-size: 150%;
+    border-radius: 10%;
+}
+.cifrar{
+    color: #ffffff;
+    background-color: rgb(61, 59, 59);
+    margin-left: 20.7%;
+    font-size: 150%;
+    border: white 8px outset;
+    border-radius: 10%;
+    
+      
+}
+.decifrar{
+    margin-left: 20.3%;
+    font-size: 150%;
+    border-radius: 10%;
+}
+.copiar{
+    
+    font-size: 150%;
+    border-radius: 10%; 
+}
+h4{
+    color: #ffffff;
+}
