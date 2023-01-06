@@ -1,90 +1,84 @@
-html{
-     background: -o-linear-gradient(top, black 10%, rgb(167, 167, 202) 75%, black);
-    background:linear-gradient(top, black 10%, rgb(167, 167, 202) 75%, black);
-    background:-webkit-linear-gradient(top, black 10%, rgb(167, 167, 202) 75%, black);
-    background:-moz-linear-gradient(top, black 10%, rgb(167, 167, 202) 75%, black);
-    background:-o-linear-gradient(top, black 10%, rgb(167, 167, 202) 75%, black);
-    background:-ms-linear-gradient(top, black 10%, rgb(167, 167, 202) 75%, black);
+body{
+    background-color: #051615;  
 }
-
 .encabezado{
-    position: relative;
-    margin-top: 3%;
+    width: 100%;
+    background: black;
+}
+.encabezado h1{ 
+    width: 120px;
+    padding: 2% 0 2% 2%;
+    margin: 0%;
+}
+.encabezado h2{ 
+    position: absolute;
+    top: 5%;
+    right: 700px;
+    color: aliceblue;
+    text-align: center;
+    margin: 0% 0 0 0%;
+    width: 500px;
+    font-size: 2em;
+    box-shadow:0 0 10px lawngreen;
+ 
+}
+main {
+
+    background: linear-gradient(#000000, #051615)
+    
 }
 #caja1{
-    
-    color: rgb(27, 27, 170);
-    resize: none;
-    background-color: rgb(255, 255, 255);
-    margin-left: 12%;
-    border: rgb(0, 0, 0) 5px dashed;
-  
+    position:relative;
+    left:20% ;
+    box-shadow:0 0 10px lawngreen;
+
 }
 #caja2{
-    
-    color: rgb(27, 27, 170);
-    background-color:rgb(255, 255, 255);
-    resize: none; 
-    margin-left: 41%;
-    border: rgb(0, 0, 0) 5px dashed;
     position: absolute;
-    
+    right: 20%;
+    box-shadow:0 0 10px lawngreen;
 }
-h1{
-    
-    margin-left: 5%;
+footer{
+  
+    width: 100%;
+    background-color: #051615;
 }
-
-h2{
-    position: absolute;
-    margin-top: 0%;
-    font-size: 200%;
-    color:rgb(207, 228, 207); 
-    margin-left: 28%;
-    
-   
-
+.ingresar ,.cifrar,.decifrar,.copiar{
+    background-color: cadetblue;
+    font-size: 20px;
+    border-radius: 20px;
+    border: #ffffff;
+    border-style: double;
+    transition: 0.5s all;
+    margin: 2% 0 2% 0;
 }
-h3{
-    margin-top: 0%;
-    margin-left: 85%;
-    position: absolute;
-
-}
-body{  
+.ingresar:hover,.cifrar:hover,.decifrar:hover,.copiar:hover{
+    background-color: darkseagreen;
+    transform: scale(1.1);
+    box-shadow:0 0 10px lawngreen;
     
-   
-
-
 }
 .ingresar{
-    margin-left: 14.5%;
-    font-size: 150%;
-    border-radius: 10%;
+    position: relative;
+    left: 25%;
 }
 .cifrar{
-    color: #ffffff;
-    background-color: rgb(61, 59, 59);
-    margin-left: 20.7%;
-    font-size: 150%;
-    border: white 8px outset;
-    border-radius: 10%;
-    
-      
+    position: relative;
+    left: 41.5%;
 }
-.decifrar{
-    margin-left: 20.3%;
-    font-size: 150%;
-    border-radius: 10%;
-}
-.copiar{
-    
-    font-size: 150%;
-    border-radius: 10%; 
+.decifrar,.copiar{
+    position: relative;
+    left: 57%;
 }
 h4{
-    margin-top: 0%;
+    margin: 0 0 0 30px;
+    position: relative;
+    font-size: medium;
     color: #ffffff;
-    position: absolute;
 }
 
+h3{
+    position: absolute;
+    left: 90%;
+    top: 90%;
+}

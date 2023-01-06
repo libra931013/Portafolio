@@ -3,31 +3,35 @@
 
 <head>
     <title>codificador</title>
-<meta charset="UTF-8">
-<link rel="Stylesheet" href="reset.css">
-<link rel="Stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <link rel="Stylesheet" href="reset.css">
+    <link rel="Stylesheet" href="style.css">
 
 </head>
 <body>
-    <header class="encabezado">
+    <header class="encabezado"> 
+        <h1 ><img src="logo.png" alt="logo-alura"></h1>
         <h2>ENCRIPTADOR ALURA CHALLENGE ONE </h2>
-        <h1><img src="logo.png"></h1>
-        
 
     </header>
-    <form name="cajas">
-       
-            <textarea placeholder="ingrese texto " name="caja1" id="caja1" cols="30" rows="40"></textarea>
-            <textarea output="caja2" id="caja2" cols="30" rows="40"></textarea>
-        
+    <main>
+            <form name="cajas">
+            
+                    <textarea placeholder="ingrese texto " name="caja1" id="caja1" cols="40" rows="40"></textarea>
+                    <textarea output="caja2" id="caja2" cols="40" rows="40"></textarea>
+                
 
-    </form>
+            </form>
+            <div class="boton">
+
+                <button class="ingresar">ingrese texto</button>
+                <button class="cifrar"; onclick="cifrar()";>cifrar</button>
+                <button class="decifrar"; onclick="iniciar()";>decifrar</button>
+                <button class="copiar" onclick="copiarPorta()">copiar</button>
+            </div>
+            
+    </main>
     
-    <button class="ingresar">ingrese texto</button>
-    <button class="cifrar"; onclick="cifrar()";>cifrar</button>
-    <button class="decifrar"; onclick="iniciar()";>decifrar</button>
-    <button class="copiar" onclick="copiarPorta()">copiar</button>
-
     <footer>
         <h4>Autor: <br> Armando Arriaga Asto</h4>
         <h3> <a href="https://www.linkedin.com/in/armando-arriaga-asto-666760183"> <img src="linkedin.png" alt="mi link linkedin"></a></h3>
