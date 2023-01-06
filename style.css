@@ -6,17 +6,17 @@ body{
     background: black;
 }
 .encabezado h1{ 
-    width: 120px;
+    
     padding: 2% 0 2% 2%;
     margin: 0%;
 }
 .encabezado h2{ 
     position: absolute;
-    top: 5%;
-    right: 700px;
+    top: 2rem;
+    left: 36.9%;
     color: aliceblue;
     text-align: center;
-    margin: 0% 0 0 0%;
+    margin: 1% 0 0 0%;
     width: 500px;
     font-size: 2em;
     box-shadow:0 0 10px lawngreen;
@@ -70,15 +70,16 @@ footer{
     position: relative;
     left: 57%;
 }
+
+h3{
+ margin: 0 0 0 1590px;
+}
 h4{
+    left: 0;
     margin: 0 0 0 30px;
-    position: relative;
+    position: absolute;
     font-size: medium;
     color: #ffffff;
 }
 
-h3{
-    position: absolute;
-    left: 90%;
-    top: 90%;
-}
+
