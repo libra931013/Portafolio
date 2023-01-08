@@ -1,46 +1,59 @@
 body{
-    background-color: #051615;  
+    background:linear-gradient( #000000 20%,#051615 90%);
+    margin: 50px;
 }
 .encabezado{
-    width: 100%;
+    width: auto;
     background: black;
+    margin: 0 auto;
+
+
 }
 .encabezado h1{ 
     
-    padding: 2% 0 2% 2%;
+    padding: 0% 0 5% 2%;
     margin: 0%;
+    position: relative;
+
 }
 .encabezado h2{ 
     position: absolute;
     top: 2rem;
-    left: 36.9%;
+    left: 35%;
     color: aliceblue;
     text-align: center;
-    margin: 1% 0 0 0%;
+    text-shadow: 10px 10px 40px green;
+    margin: 1.5% 0 0 0%;
     width: 500px;
     font-size: 2em;
     box-shadow:0 0 10px lawngreen;
  
 }
 main {
-
+    margin: 0 auto;
+    width: auto;
     background: linear-gradient(#000000, #051615)
     
 }
+
+
 #caja1{
+
     position:relative;
-    left:20% ;
+    left:10% ;
     box-shadow:0 0 10px lawngreen;
 
 }
 #caja2{
+    
     position: absolute;
-    right: 20%;
+    left: 68%;
     box-shadow:0 0 10px lawngreen;
+    
 }
 footer{
-  
-    width: 100%;
+    margin: 0 auto;
+    width: auto;
     background-color: #051615;
 }
 .ingresar ,.cifrar,.decifrar,.copiar{
@@ -60,26 +73,48 @@ footer{
 }
 .ingresar{
     position: relative;
-    left: 25%;
+    left: 15%;
 }
 .cifrar{
     position: relative;
-    left: 41.5%;
+    left: 38.5%;
 }
 .decifrar,.copiar{
     position: relative;
-    left: 57%;
+    left: 62%;
 }
 
 h3{
- margin: 0 0 0 1590px;
+ margin: 0 0 0 90%;
 }
 h4{
-    left: 0;
+    left: 5%;
     margin: 0 0 0 30px;
     position: absolute;
     font-size: medium;
     color: #ffffff;
 }
 
-
+@media screen and (max-width:480px){
+    .encabezado h2{
+        left: 30%;
+    }
+    #caja2{
+        left: 60%;
+    }
+    .decifrar,.copiar{
+    position: relative;
+    left: 47%;
+    }
+    .cifrar{
+    position: relative;
+    left: 34.5%;
+    }
+    .ingresar{
+    position: relative;
+    left: 20%;
+    }
+    h3{
+     margin: 0 0 0 97%;
+    }
+}
